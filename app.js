@@ -102,6 +102,9 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
     if(title === "" || author === "" || isbn === "") {
         UI.showAlert("Please fill in all fields", "danger");
     }
+    else if (isNaN(isbn) === true) {
+        UI.showAlert("Please fill out a valid ISBN with numbers only.", "danger");
+    }
     else {
         // Instantiate Book
         const book = new Book(title, author, isbn);
