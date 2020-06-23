@@ -1,0 +1,10 @@
+.alert {
+    animation-name: fadeAlert;
+    animation-duration: 3s;
+}
+
+@keyframes fadeAlert {
+    0% {opacity: 100;}
+    50% {opacitY: 100;}
+    100% {opacity: 0;}
+}
